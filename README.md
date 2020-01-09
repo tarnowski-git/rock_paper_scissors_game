@@ -6,7 +6,7 @@ It's Rock-Paper-Scissors game using HTML, CSS, and pure vanilla JavaScript.
 
 [Game](https://tarnowski-git.github.io/rock_paper_scissors_game/)
 
-<!-- ![](/game.gif) -->
+![game](https://user-images.githubusercontent.com/34337622/72091944-9f66da80-3311-11ea-81d6-977131cc7991.gif)
 
 ## Technologies
 
