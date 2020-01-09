@@ -13,8 +13,8 @@ function play(e) {
     restart.style.display = "inline-block";
     const playerChoice = e.target.id;
     const computerChoice = getComputerChoice();
-
-    console.log(playerChoice, computerChoice);
+    const winner = getWinner(playerChoice, computerChoice);
+    console.log(playerChoice, computerChoice, winner);
 }
 
 // Get computer choice
@@ -26,6 +26,27 @@ function getComputerChoice() {
         return "paper";
     } else {
         return "scissors";
+    }
+}
+
+// Get game winner
+function getWinner(p, c) {
+    if (p == c) {
+        return "draw";
+    } else if (p == "rock" && c == "paper") {
+        return "computer";
+    } else if (p == "rock" && c == "scissors") {
+        return "player";
+    } else if (p == "paper" && c == "scissors") {
+        return "computer";
+    } else if (p == "paper" && c == "rock") {
+        return "player";
+    } else if (p == "scissors" && c == "rock") {
+        return "computer";
+    } else if (p == "scissors" && c == "paper") {
+        return "player";
+    } else {
+        console.log("game logic error");
     }
 }
 
